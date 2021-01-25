@@ -1,7 +1,8 @@
 #ifndef MANAGER_H
 #define MANAGER_H
-#include "customer.h"
 #include <iostream>
+
+#include "Customer.hpp"
 class Manager
 {
 private:

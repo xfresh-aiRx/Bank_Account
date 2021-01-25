@@ -1,0 +1,3 @@
+// the configured options and settings for Banking
+#define Banking_VERSION_MAJOR @Banking_VERSION_MAJOR@
+#define Banking_VERSION_MINOR @Banking_VERSION_MINOR@

@@ -2,10 +2,11 @@
 #define CUSTOMER_H 
 #include <string>
 #include <vector>
-#include <boost/date_time.hpp>
-#include "account.hpp"
-using namespace boost::gregorian;
+#include "boost/date_time/gregorian/gregorian.hpp"
+
+#include "Account.hpp"
 using namespace std;
+using namespace boost::gregorian;
 class Customer
 {
 private:
@@ -20,13 +21,5 @@ public:
     ~Customer();
     
 };
-
-Customer::Customer(/* args */)
-{
-}
-
-Customer::~Customer()
-{
-}
 
 #endif // CUSTOMER_H

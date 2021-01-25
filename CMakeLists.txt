@@ -1,22 +1,16 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.1.0)
 
-# project name
-project(Banking)
+# set the project name and version
+project(Banking VERSION 1.0)
 
-#flags
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-#files
-file(GLOB_RECURSE sources CONFIGURE_DEPENDS 
-"*.hpp"
-"*.cpp"
-)
+# configure a header file to pass the version number only
+configure_file(BankingConfig.h.in BankingConfig.hpp)
 
-#external libs
-find_package(Boost REQUIRED COMPONENTS date_time)
+add_subdirectory(banking)
 
-if(Boost_FOUND)
-#include
-include_directories( ./include ./src )
-# executable
-add_executable(Banking ${sources} )
-endif()
+
+
