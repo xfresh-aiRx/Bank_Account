@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
 
-set(This BankingTests)
+set(binary BankingTests)
 
-set(SOURCES
-AllTests.cpp
-)
+file(GLOB sources CONFIGURE_DEPENDS "*.h" "*.cpp")
 
-add_executable(${This} ${SOURCES})
-target_link_libraries(${This} ${SOURCES})
+find_package(GTest CONFIG REQUIRED)
 
-add_test(NAME ${This}
-COMMAND ${This})
+add_executable(${binary} ${sources})
+add_test(NAME ${binary} COMMAND ${binary})
+target_link_libraries(${binary} PUBLIC GTest::gtest gtest_main)

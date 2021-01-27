@@ -9,8 +9,6 @@
 #define INCLUDE_BANKING_ACCOUNT_HPP_
 
 #include <string>
-using namespace std;
-
 class Account {
 private:
 	int balance;
