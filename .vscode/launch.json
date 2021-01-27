@@ -5,17 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Starten",
+            "name": "Test Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Banking.exe",
+            "program": "${workspaceFolder}/BankingTests.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Users\\RRote\\scoop\\apps\\cygwin\\current\\root\\bin\\gdb.exe",
+            "miDebuggerPath": "/usr/bin/gdb",
             "setupCommands": [
                 {
                     "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",

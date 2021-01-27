@@ -60,5 +60,8 @@
         "variant": "cpp",
         "numeric": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cSpell.words": [
+        "gtest"
+    ]
 }
